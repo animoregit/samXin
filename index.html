@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sam — Developer &amp; Bot Maker</title>
+<meta name="description" content="Sam — developer and bot maker. I build Telegram and Discord bots, automation, and tools that actually get used." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">SAM<span class="brand-dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#bots">Bots</a>
+    <a href="#stack">Stack</a>
+    <a href="#work">Work</a>
+    <a href="#contact" class="nav-cta">Hire me</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available for new projects</p>
+        <h1 class="hero-title">
+          I build bots<br />
+          that <span class="grad">do the work</span><br />
+          while you sleep.
+        </h1>
+        <p class="hero-sub">
+          I'm Sam — a developer and bot maker. Telegram &amp; Discord bots, API
+          integrations, automation pipelines and the small tools that turn a
+          manual chore into a one-tap command.
+        </p>
+        <div class="hero-actions">
+          <a href="#bots" class="btn btn-primary">See my bots</a>
+          <a href="#contact" class="btn btn-ghost">Start a project</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong data-count="1200">0</strong><span>lines shipped / week</span></li>
+          <li><strong data-count="14">0</strong><span>bots deployed</span></li>
+          <li><strong data-count="99.9" data-decimals="1" data-suffix="%">0</strong><span>uptime target</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-term" aria-hidden="true">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">sam@botmaker: ~/projects</span>
+        </div>
+        <pre class="term-body" id="termBody"></pre>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about"><span></span>scroll</a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>TELEGRAM BOTS</span><i>◆</i><span>DISCORD BOTS</span><i>◆</i>
+      <span>AUTOMATION</span><i>◆</i><span>API INTEGRATIONS</span><i>◆</i>
+      <span>WEB SCRAPERS</span><i>◆</i><span>AI AGENTS</span><i>◆</i>
+      <span>TELEGRAM BOTS</span><i>◆</i><span>DISCORD BOTS</span><i>◆</i>
+      <span>AUTOMATION</span><i>◆</i><span>API INTEGRATIONS</span><i>◆</i>
+      <span>WEB SCRAPERS</span><i>◆</i><span>AI AGENTS</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2>Who you're hiring</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-lead">
+        <p class="lead">Most "automation" is a spreadsheet with extra steps.
+        I build the thing that removes the step.</p>
+        <p>I'm a self-taught developer who fell into bot making because it's the
+        fastest way to turn a real annoyance into a real fix. Give me a repetitive
+        task and a chat window, and I'll give you a bot that handles it.</p>
+        <p>I care about the unglamorous parts: retries, rate limits, error messages a
+        human can actually understand, logs you can read at 2am. A bot that works on
+        a good day isn't finished.</p>
+        <div class="pill-row">
+          <span class="pill">Fast to ship</span>
+          <span class="pill">Documented</span>
+          <span class="pill">Self-hosted friendly</span>
+          <span class="pill">No lock-in</span>
+        </div>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <span class="p-idx">01</span>
+          <h3>Automate the boring 80%</h3>
+          <p>The last 20% is where your judgment lives — that's the part you keep.</p>
+        </div>
+        <div class="principle">
+          <span class="p-idx">02</span>
+          <h3>Bots should be boring to run</h3>
+          <p>Idempotent, restartable, observable. Nothing that needs babysitting.</p>
+        </div>
+        <div class="principle">
+          <span class="p-idx">03</span>
+          <h3>Ship small, ship often</h3>
+          <p>A working v1 in three days beats a perfect plan in three weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOTS ============ -->
+  <section class="section" id="bots">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2>Bots I've built</h2>
+    </div>
+    <p class="sec-sub">Real tools, real users. Pick one that looks like your problem.</p>
+
+    <div class="bot-grid">
+      <article class="bot-card">
+        <div class="bot-top">
+          <span class="bot-ico">◈</span>
+          <span class="bot-tag">TELEGRAM</span>
+        </div>
+        <h3>TaskPilot</h3>
+        <p>A Telegram bot that turns voice notes into tasks, reminders and calendar
+        entries. Natural language in, structured action out — no app-switching.</p>
+        <ul class="bot-feats">
+          <li>Voice → parsed task → reminder</li>
+          <li>Natural-language date parsing</li>
+          <li>Inline keyboard quick-actions</li>
+        </ul>
+        <div class="bot-metrics">
+          <span><strong>1.2k</strong> tasks created</span>
+          <span><strong>3</strong> languages</span>
+        </div>
+      </article>
+
+      <article class="bot-card">
+        <div class="bot-top">
+          <span class="bot-ico">◆</span>
+          <span class="bot-tag">DISCORD</span>
+        </div>
+        <h3>GuildWatch</h3>
+        <p>A moderation + analytics bot for Discord communities. Tracks join/leave
+        spikes, flags raid patterns, and posts a weekly digest nobody has to build
+        by hand.</p>
+        <ul class="bot-feats">
+          <li>Raid detection &amp; auto-lockdown</li>
+          <li>Weekly engagement digest</li>
+          <li>Role sync from an external sheet</li>
+        </ul>
+        <div class="bot-metrics">
+          <span><strong>4</strong> communities</span>
+          <span><strong>2.1k</strong> members</span>
+        </div>
+      </article>
+
+      <article class="bot-card">
+        <div class="bot-top">
+          <span class="bot-ico">⬢</span>
+          <span class="bot-tag">AUTOMATION</span>
+        </div>
+        <h3>PricePing</h3>
+        <p>A scraper + notifier that watches product and flight prices around the
+        clock and pushes a single clean alert when the price actually drops — not
+        every hour.</p>
+        <ul class="bot-feats">
+          <li>Headless-browser scraping</li>
+          <li>Price-history aware alerting</li>
+          <li>One alert, not fifty</li>
+        </ul>
+        <div class="bot-metrics">
+          <span><strong>9</strong> sources tracked</span>
+          <span><strong>~30%</strong> avg. savings</span>
+        </div>
+      </article>
+
+      <article class="bot-card">
+        <div class="bot-top">
+          <span class="bot-ico">✦</span>
+          <span class="bot-tag">AI AGENT</span>
+        </div>
+        <h3>BriefBot</h3>
+        <p>An LLM-backed assistant wired into a team chat. Reads the channel,
+        keeps a running memory of decisions, and answers "what did we decide about
+        X?" without anyone digging through scrollback.</p>
+        <ul class="bot-feats">
+          <li>Channel-aware long-term memory</li>
+          <li>Thread summaries on demand</li>
+          <li>Citation links back to messages</li>
+        </ul>
+        <div class="bot-metrics">
+          <span><strong>6 mo</strong> in production</span>
+          <span><strong>80%</strong> less searching</span>
+        </div>
+      </article>
+
+      <article class="bot-card">
+        <div class="bot-top">
+          <span class="bot-ico">◇</span>
+          <span class="bot-tag">TELEGRAM</span>
+        </div>
+        <h3>GroupChef</h3>
+        <p>A bot for running shared expenses in a group chat. Splits bills, tracks
+        who owes what, and settles up with UPI / links — no spreadsheet, no awkward
+        reminder messages.</p>
+        <ul class="bot-feats">
+          <li>Multi-user ledger in SQLite</li>
+          <li>Settle-up suggestions</li>
+          <li>Monthly summary export</li>
+        </ul>
+        <div class="bot-metrics">
+          <span><strong>11</strong> regular groups</span>
+          <span><strong>0</strong> spreadsheets</span>
+        </div>
+      </article>
+
+      <article class="bot-card bot-card-cta">
+        <div class="bot-top"><span class="bot-ico">+</span></div>
+        <h3>Your bot, next</h3>
+        <p>Describe the annoying thing you do every week. I'll tell you honestly
+        whether a bot is the right answer — and roughly what it takes.</p>
+        <a href="#contact" class="btn btn-primary btn-block">Tell me about it</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section" id="stack">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2>What I build with</h2>
+    </div>
+    <p class="sec-sub">The tools change. The instinct — start from the annoyance,
+not the framework — doesn't.</p>
+
+    <div class="stack-wrap">
+      <div class="stack-col">
+        <h4 class="stack-h">Core</h4>
+        <ul class="stack-list">
+          <li><span>Python</span><i class="lv lv-4"></i></li>
+          <li><span>Node.js</span><i class="lv lv-4"></i></li>
+          <li><span>TypeScript</span><i class="lv lv-3"></i></li>
+          <li><span>SQL / PostgreSQL</span><i class="lv lv-3"></i></li>
+          <li><span>Git &amp; GitHub Actions</span><i class="lv lv-4"></i></li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h4 class="stack-h">Bot &amp; API</h4>
+        <ul class="stack-list">
+          <li><span>python-telegram-bot</span><i class="lv lv-4"></i></li>
+          <li><span>aiogram</span><i class="lv lv-3"></i></li>
+          <li><span>discord.py / discord.js</span><i class="lv lv-4"></i></li>
+          <li><span>REST &amp; webhook APIs</span><i class="lv lv-4"></i></li>
+          <li><span>OpenAI-compatible LLMs</span><i class="lv lv-3"></i></li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h4 class="stack-h">Ops</h4>
+        <ul class="stack-list">
+          <li><span>Docker</span><i class="lv lv-3"></i></li>
+          <li><span>Playwright</span><i class="lv lv-3"></i></li>
+          <li><span>SQLite / Postgres</span><i class="lv lv-3"></i></li>
+          <li><span>Cron &amp; queues</span><i class="lv lv-4"></i></li>
+          <li><span>Logging &amp; alerting</span><i class="lv lv-3"></i></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2>How we work</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="step-n">01</span>
+        <h3>You describe the annoyance</h3>
+        <p>A voice note, a paragraph, a mess of screenshots. I don't need a spec.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">02</span>
+        <h3>I scope it honestly</h3>
+        <p>What's automatable, what isn't, what it'll cost, roughly how long. In writing, before any code.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">03</span>
+        <h3>You get a working bot fast</h3>
+        <p>A usable v1 in your own chat within days — not a slide deck about a bot.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">04</span>
+        <h3>We harden it</h3>
+        <p>Retries, permissions, backups, docs. You own the code and the hosting either way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / OTHER ============ -->
+  <section class="section" id="work">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2>Beyond the bots</h2>
+    </div>
+    <div class="other-grid">
+      <div class="other-card">
+        <h3>JoyboyHACK</h3>
+        <p>A living lab of web experiments, challenges and small acts of internet
+        mischief. Every surface is an excuse to try an interaction nobody has
+        tried yet.</p>
+        <span class="other-tag">CREATIVE CODING</span>
+      </div>
+      <div class="other-card">
+        <h3>Notes &amp; write-ups</h3>
+        <p>Breaking down the bots that taught me something — what broke, why, and
+        the fix I'd use next time.</p>
+        <span class="other-tag">WRITING</span>
+      </div>
+      <div class="other-card">
+        <h3>Off-screen</h3>
+        <p>Photography, mathematics, long walks, and asking questions that don't
+        have a quick answer yet.</p>
+        <span class="other-tag">INTERESTS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="contact-inner">
+      <p class="eyebrow"><span class="status-dot"></span> Open for work</p>
+      <h2>Let's build your bot.</h2>
+      <p class="contact-sub">
+        Tell me the thing you keep doing by hand. If a bot is the right answer,
+        you'll know within a day.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary btn-lg" href="https://t.me/esczi">@esczi</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://t.me/esczi" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 Sam — developer &amp; bot maker</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
